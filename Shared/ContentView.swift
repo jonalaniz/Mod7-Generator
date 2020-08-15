@@ -81,7 +81,7 @@ struct ContentView: View {
         .onAppear {
             generator.refresh()
         }
-        .frame(maxWidth: width(), maxHeight: height())
+        .frame(maxWidth: width(), minHeight: minHeight() , maxHeight: maxHeight())
         
     }
 }

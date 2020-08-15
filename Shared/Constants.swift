@@ -7,13 +7,25 @@
 
 import SwiftUI
 
-public func height() -> CGFloat {
+public func maxHeight() -> CGFloat {
     var height: CGFloat
     
     #if os(macOS)
-        height = 325
+        height = 328
     #else
         height = .infinity
+    #endif
+    
+    return height
+}
+
+public func minHeight() -> CGFloat {
+    var height: CGFloat
+    
+    #if os(macOS)
+        height = 328
+    #else
+        height = 0
     #endif
     
     return height
